@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Chaudhari - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="profile-photo">
+                <img src="1.jpg" alt="Your Photo">
+            </div>
+            <div class="header-content">
+                <h1>Vedant Sanjay Chaudhari</h1>
+                <p>Pune, Maharashtra, India</p>
+                <p>Email: chaudharivedant96@gmail.com</p>
+                <p>Phone: (+91) - 8010977300</p>
+                <p><a href="https://www.linkedin.com/in/vedant-chaudhari-a4b3a71ba">LinkedIn</a></p>
+                <button onclick="downloadResume()">Download Resume</button>
+                <p id="resumeMessage" style="display: none;">Resume is ready to view</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="about-education-container">
+                <div class="about-container">
+                    <section class="about">
+                        <h2>About</h2>
+                        <p>
+                            I am a Final year electronics and telecommunication engineering student with a strong interest in Software Development and Data Science.
+                            Proficient in programming languages C++ and Python. Experienced in web development using HTML, CSS, and JavaScript, and adept at
+                            utilizing databases, specifically SQL. Well-versed in version control using Git and skilled in data science libraries such as NLPs and Pandas.
+                        </p>
+                    </section>
+                </div>
+                <div class="education-container">
+                    <section class="education">
+                        <h2>Education</h2>
+                        <ul>
+                            <li>
+                                <strong>BE Electronics and Telecommunication</strong><br>
+                                Marathawada Mitra Mandal's College of Engineering, Pune, Maharashtra, India<br>
+                                2024 - GPA: 8.35
+                            </li>
+                            <li>
+                                <strong>HSC (12th)</strong><br>
+                                Swami Vevakanand Junior College, Maharashtra, Jalgaon, India<br>
+                                2020 - Percentage: 77%
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            
+            <section class="experience">
+                <h2>Experience</h2>
+                <div class="job">
+                    <h3>Data Engineering Intern</h3>
+                    <p>Bajaj finserv</p>
+                    <ul>
+                        <li>Engaged in a project targeting the discovery of emerging key opinion leaders within the finance sector.</li>
+                        <li>Accumulated data of 100,00,00+ customers for the development of the model.</li>
+                        <li>February 2023 - March 2023, Pune</li>
+                        <li>Actively contributed to the refinement of a search bar interface, diligently enhancing its functionality by incorporating new keywords to augment search precision and facilitate an enriched user experience.</li>
+                        <li>Tools used: Postman, VSCode, Jupyter.</li>
+                        <li>Technical language: C++, Python, MongoDB.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Notes Application for iOS & Android</h3>
+                    <ul>
+                        <li>July 2023 - August 2023</li>
+                        <li>Developed an offline-first application with seamless synchronization between local storage and the database.</li>
+                        <li>Designed to be multi-device compatible, the application utilizes a tag-based system for efficient note management.</li>
+                        <li>Tech: Flutter, Node.js, Express.js, REST, Firebase, MongoDB</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Face recognition attendance system</h3>
+                    <ul>
+                        <li>June 2022 - January 2023</li>
+                        <li>Spearheaded the development of a cutting-edge Face Recognition Attendance System.</li>
+                        <li>Leveraged advanced libraries, including OpenCV for robust image processing, Pandas for seamless data management, and Tkinter for crafting an intuitive user interface.</li>
+                        <li>Innovatively designed and implemented a system that autonomously captures and records student attendance by meticulously validating their unique facial patterns. Achieved a seamless integration of facial recognition technology, ensuring unparalleled accuracy and efficiency in automating the attendance-taking process.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="skills">
+                <h2>Skills</h2>
+                <div class="skill-category">
+                    <h3>CS Fundamentals</h3>
+                    <p>OOPS, DSA, DBMS, CN</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>C++, Python, Dart (Basic), JavaScript</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Tools</h3>
+                    <p>Flutter, MySQL, MongoDB</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Libraries</h3>
+                    <p>Node.js, Express.js, NumPy, Pandas, Scikit-learn, KNN, CNN</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Platforms</h3>
+                    <p>MacOS, Windows</p>
+                </div>
+            </section>
+
+            <section class="certifications">
+                <h2>Certifications</h2>
+                <div class="certification">
+                    <h3>Google Advanced Data Analytics</h3>
+                    <p>Coursera - 2023</p>
+                </div>
+                <div class="certification">
+                    <h3>Hacker Rank (Basic)</h3>
+                    <p>Python, Problem Solving, SQL - Hacker Rank Platform - 2023</p>
+                </div>
+            </section>
+
+            <section class="contact-me">
+                <h2>Contact me</h2>
+                <button id="contactButton">Click here to contact</button>
+                <div id="contactFormContainer" style="display: none;">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="query">Query:</label>
+                            <textarea id="query" name="query" required></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <p id="responseMessage" style="display: none;">Your response is recorded. We will reach you shortly. Thank you for your response.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

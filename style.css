@@ -1,0 +1,116 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightseagreen; /* Set the background color of the body */
+}
+
+.container {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+}
+
+.profile-photo img {
+    width: 100px;
+    height: auto;
+    border-radius: 100%;
+    margin-right: 100px;
+    size: 100px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.about-education-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-container,
+.education-container {
+    flex-basis: 45%;
+}
+
+.about,
+.education {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.projects,
+.experience,
+.skills,
+.certifications,
+.contact-me {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-me button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-me button:hover {
+    background-color: #0056b3;
+}
+
+.contact-me form {
+    margin-top: 20px;
+}
+
+.contact-me form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-me form input[type="text"],
+.contact-me form input[type="email"],
+.contact-me form input[type="tel"],
+.contact-me form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-me form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-me form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#responseMessage {
+    margin-top: 10px;
+    color: #28a745;
+}
