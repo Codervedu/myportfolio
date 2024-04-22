@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vedant Chaudhari - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1">
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <header class="header">
             <div class="profile-photo">
@@ -26,14 +38,15 @@
         <main class="main-content">
             <div class="about-education-container">
                 <div class="about-container">
-                    <section class="about">
+                    <section class="section" id="about">
                         <h2>About</h2>
-                        <p>
-                            I am a Final year electronics and telecommunication engineering student with a strong interest in Software Development and Data Science.
-                            Proficient in programming languages C++ and Python. Experienced in web development using HTML, CSS, and JavaScript, and adept at
-                            utilizing databases, specifically SQL. Well-versed in version control using Git and skilled in data science libraries such as NLPs and Pandas.
-                        </p>
-                    </section>
+                        <p class="summary">want to read more about me....</p>
+                        <button class="read-more-btn">Read more</button>
+                        <p class="details"> I am Final year electronics and telecommunication engineering student with a strong interest in Software Development and Data Science. 
+                            Proficient in programming languages C++ and Python. Experienced in web development using HTML, CSS, and JavaScript, and adept at 
+                            utilizing databases, specifically SQL. Well-versed in version control using Git and skilled in data science libraries such as NLPs and Pandas.</p>
+                        
+                    </section>                    
                 </div>
                 <div class="education-container">
                     <section class="education">
@@ -70,27 +83,35 @@
                 </div>
             </section>
 
-            <section class="projects">
+            <section class="projects section">
                 <h2>Projects</h2>
-                <div class="project">
-                    <h3>Notes Application for iOS & Android</h3>
-                    <ul>
-                        <li>July 2023 - August 2023</li>
-                        <li>Developed an offline-first application with seamless synchronization between local storage and the database.</li>
-                        <li>Designed to be multi-device compatible, the application utilizes a tag-based system for efficient note management.</li>
-                        <li>Tech: Flutter, Node.js, Express.js, REST, Firebase, MongoDB</li>
-                    </ul>
-                </div>
-                <div class="project">
-                    <h3>Face recognition attendance system</h3>
-                    <ul>
-                        <li>June 2022 - January 2023</li>
-                        <li>Spearheaded the development of a cutting-edge Face Recognition Attendance System.</li>
-                        <li>Leveraged advanced libraries, including OpenCV for robust image processing, Pandas for seamless data management, and Tkinter for crafting an intuitive user interface.</li>
-                        <li>Innovatively designed and implemented a system that autonomously captures and records student attendance by meticulously validating their unique facial patterns. Achieved a seamless integration of facial recognition technology, ensuring unparalleled accuracy and efficiency in automating the attendance-taking process.</li>
-                    </ul>
+                <div class="project-container">
+                    <div class="project">
+                        <h3>Notes Application for iOS & Android</h3>
+                        <p>July 2023 - August 2023</p>
+                        <button class="read-more-btn">Read more</button>
+                        <div class="details">
+                            <p>Developed an offline-first application with seamless synchronization between local storage and the database.</p>
+                            <p>Designed to be multi-device compatible, the application utilizes a tag-based system for efficient note management.</p>
+                            <p>Tech: Flutter, Node.js, Express.js, REST, Firebase, MongoDB</p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h3>Face recognition attendance system</h3>
+                        <p>June 2022 - January 2023</p>
+                        <button class="read-more-btn">Read more</button>
+                        <div class="details">
+                            <p>Spearheaded the development of a cutting-edge Face Recognition Attendance System.</p>
+                            <p>Leveraged advanced libraries, including OpenCV for robust image processing, Pandas for seamless data management, and Tkinter for crafting an intuitive user interface.</p>
+                            <p>Innovatively designed and implemented a system that autonomously captures and records student attendance by meticulously validating their unique facial patterns. Achieved a seamless integration of facial recognition technology, ensuring unparalleled accuracy and efficiency in automating the attendance-taking process.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
+            
+            
+            
+            
 
             <section class="skills">
                 <h2>Skills</h2>
